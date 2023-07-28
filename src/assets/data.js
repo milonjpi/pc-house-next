@@ -1,7 +1,43 @@
-import { Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
-
 const { default: Link } = require('next/link');
+
+// all categories
+export const allCategories = [
+  {
+    id: 'processor',
+    label: 'CPU / Processor',
+    image: '',
+  },
+  {
+    id: 'motherboard',
+    label: 'Motherboard',
+    image: '',
+  },
+  {
+    id: 'ram',
+    label: 'RAM',
+    image: '',
+  },
+  {
+    id: 'powerSupply',
+    label: 'Power Supply Unit',
+    image: '',
+  },
+  {
+    id: 'storage',
+    label: 'Storage Device',
+    image: '',
+  },
+  {
+    id: 'monitor',
+    label: 'Monitor',
+    image: '',
+  },
+  {
+    id: 'others',
+    label: 'Others',
+    image: '',
+  },
+];
 
 // all menu
 export const allMenuItems = [
@@ -45,8 +81,8 @@ export const allMenuItems = [
   },
 ];
 
-// categories
-export const allCategories = [
+// menu categories
+export const menuCategories = [
   {
     label: <Link href="/categories/processor">CPU / Processor</Link>,
     key: 'processor',

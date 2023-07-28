@@ -11,7 +11,7 @@ const { Header, Sider, Content, Footer } = Layout;
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import React from 'react';
-import { allCategories, allMenuItems } from '@/assets/data';
+import { menuCategories, allMenuItems } from '@/assets/data';
 
 const RootLayout = ({ children }) => {
   return (
@@ -39,7 +39,7 @@ const RootLayout = ({ children }) => {
             <Menu theme="dark" mode="vertical" className={styles.menu_items}>
               <Dropdown
                 menu={{
-                  items: allCategories,
+                  items: menuCategories,
                 }}
               >
                 <a onClick={(e) => e.preventDefault()}>

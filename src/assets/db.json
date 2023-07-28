@@ -2,7 +2,7 @@
   "Accessories": [
     {
       "id": "1",
-      "Product Name": "Intel Core i7-9700K",
+      "Name": "Intel Core i7-9700K",
       "Category": "Processor",
       "Price": 329.99,
       "Status": "In Stock",
@@ -10,7 +10,7 @@
     },
     {
       "id": "2",
-      "Product Name": "ASUS ROG Strix Z590-E",
+      "Name": "ASUS ROG Strix Z590-E",
       "Category": "Motherboard",
       "Price": 279.99,
       "Status": "In Stock",
@@ -18,7 +18,7 @@
     },
     {
       "id": "3",
-      "Product Name": "Corsair Vengeance RGB Pro",
+      "Name": "Corsair Vengeance RGB Pro",
       "Category": "RAM",
       "Price": 89.99,
       "Status": "In Stock",
@@ -26,7 +26,7 @@
     },
     {
       "id": "4",
-      "Product Name": "EVGA Supernova 750 G3",
+      "Name": "EVGA Supernova 750 G3",
       "Category": "Power Supply",
       "Price": 119.99,
       "Status": "Out of Stock",
@@ -34,7 +34,7 @@
     },
     {
       "id": "5",
-      "Product Name": "Samsung 970 EVO Plus 1TB",
+      "Name": "Samsung 970 EVO Plus 1TB",
       "Category": "Storage Device",
       "Price": 169.99,
       "Status": "In Stock",
@@ -42,7 +42,7 @@
     },
     {
       "id": "6",
-      "Product Name": "LG 27GL850-B",
+      "Name": "LG 27GL850-B",
       "Category": "Monitor",
       "Price": 399.99,
       "Status": "In Stock",
@@ -50,7 +50,7 @@
     },
     {
       "id": "7",
-      "Product Name": "AMD Ryzen 9 5900X",
+      "Name": "AMD Ryzen 9 5900X",
       "Category": "Processor",
       "Price": 499.99,
       "Status": "In Stock",
@@ -58,7 +58,7 @@
     },
     {
       "id": "8",
-      "Product Name": "GIGABYTE B550 AORUS Pro",
+      "Name": "GIGABYTE B550 AORUS Pro",
       "Category": "Motherboard",
       "Price": 159.99,
       "Status": "In Stock",
@@ -66,7 +66,7 @@
     },
     {
       "id": "9",
-      "Product Name": "G.Skill Trident Z Neo",
+      "Name": "G.Skill Trident Z Neo",
       "Category": "RAM",
       "Price": 109.99,
       "Status": "Out of Stock",
@@ -74,7 +74,7 @@
     },
     {
       "id": "10",
-      "Product Name": "Corsair RM850x",
+      "Name": "Corsair RM850x",
       "Category": "Power Supply",
       "Price": 139.99,
       "Status": "In Stock",
@@ -82,7 +82,7 @@
     },
     {
       "id": "11",
-      "Product Name": "WD Blue SN550 500GB",
+      "Name": "WD Blue SN550 500GB",
       "Category": "Storage Device",
       "Price": 74.99,
       "Status": "In Stock",
@@ -90,7 +90,7 @@
     },
     {
       "id": "12",
-      "Product Name": "ASUS TUF Gaming VG27AQ",
+      "Name": "ASUS TUF Gaming VG27AQ",
       "Category": "Monitor",
       "Price": 329.99,
       "Status": "Out of Stock",
@@ -98,7 +98,7 @@
     },
     {
       "id": "13",
-      "Product Name": "Intel Core i9-11900K",
+      "Name": "Intel Core i9-11900K",
       "Category": "Processor",
       "Price": 549.99,
       "Status": "In Stock",
@@ -106,7 +106,7 @@
     },
     {
       "id": "14",
-      "Product Name": "MSI MAG B560M Mortar",
+      "Name": "MSI MAG B560M Mortar",
       "Category": "Motherboard",
       "Price": 129.99,
       "Status": "In Stock",
@@ -114,7 +114,7 @@
     },
     {
       "id": "15",
-      "Product Name": "Crucial Ballistix 16GB DDR4",
+      "Name": "Crucial Ballistix 16GB DDR4",
       "Category": "RAM",
       "Price": 89.99,
       "Status": "Out of Stock",
@@ -122,7 +122,7 @@
     },
     {
       "id": "16",
-      "Product Name": "Seasonic Focus GX-850",
+      "Name": "Seasonic Focus GX-850",
       "Category": "Power Supply",
       "Price": 149.99,
       "Status": "In Stock",
@@ -130,7 +130,7 @@
     },
     {
       "id": "17",
-      "Product Name": "Crucial MX500 1TB",
+      "Name": "Crucial MX500 1TB",
       "Category": "Storage Device",
       "Price": 99.99,
       "Status": "In Stock",
@@ -138,7 +138,7 @@
     },
     {
       "id": "18",
-      "Product Name": "AOC CQ32G1",
+      "Name": "AOC CQ32G1",
       "Category": "Monitor",
       "Price": 299.99,
       "Status": "In Stock",
@@ -146,7 +146,7 @@
     },
     {
       "id": "19",
-      "Product Name": "AMD Ryzen 7 5800X",
+      "Name": "AMD Ryzen 7 5800X",
       "Category": "Processor",
       "Price": 399.99,
       "Status": "In Stock",
@@ -154,7 +154,7 @@
     },
     {
       "id": "20",
-      "Product Name": "ASRock B550 Steel Legend",
+      "Name": "ASRock B550 Steel Legend",
       "Category": "Motherboard",
       "Price": 139.99,
       "Status": "Out of Stock",
@@ -162,7 +162,7 @@
     },
     {
       "id": "21",
-      "Product Name": "Patriot Viper Steel DDR4 32GB",
+      "Name": "Patriot Viper Steel DDR4 32GB",
       "Category": "RAM",
       "Price": 169.99,
       "Status": "In Stock",
@@ -170,7 +170,7 @@
     },
     {
       "id": "22",
-      "Product Name": "NZXT C850",
+      "Name": "NZXT C850",
       "Category": "Power Supply",
       "Price": 129.99,
       "Status": "In Stock",
@@ -178,7 +178,7 @@
     },
     {
       "id": "23",
-      "Product Name": "Samsung 980 Pro 500GB",
+      "Name": "Samsung 980 Pro 500GB",
       "Category": "Storage Device",
       "Price": 139.99,
       "Status": "Out of Stock",
@@ -186,7 +186,7 @@
     },
     {
       "id": "24",
-      "Product Name": "Dell S2721DGF",
+      "Name": "Dell S2721DGF",
       "Category": "Monitor",
       "Price": 449.99,
       "Status": "In Stock",
@@ -194,7 +194,7 @@
     },
     {
       "id": "25",
-      "Product Name": "Intel Core i5-11600K",
+      "Name": "Intel Core i5-11600K",
       "Category": "Processor",
       "Price": 279.99,
       "Status": "Out of Stock",
@@ -202,7 +202,7 @@
     },
     {
       "id": "26",
-      "Product Name": "GIGABYTE X570 AORUS Elite",
+      "Name": "GIGABYTE X570 AORUS Elite",
       "Category": "Motherboard",
       "Price": 199.99,
       "Status": "In Stock",
@@ -210,7 +210,7 @@
     },
     {
       "id": "27",
-      "Product Name": "Team Group T-Force Xtreem ARGB",
+      "Name": "Team Group T-Force Xtreem ARGB",
       "Category": "RAM",
       "Price": 129.99,
       "Status": "In Stock",
@@ -218,7 +218,7 @@
     },
     {
       "id": "28",
-      "Product Name": "be quiet! Straight Power 11 750W",
+      "Name": "be quiet! Straight Power 11 750W",
       "Category": "Power Supply",
       "Price": 149.99,
       "Status": "Out of Stock",
@@ -226,7 +226,7 @@
     },
     {
       "id": "29",
-      "Product Name": "Crucial P5 2TB",
+      "Name": "Crucial P5 2TB",
       "Category": "Storage Device",
       "Price": 299.99,
       "Status": "In Stock",
@@ -234,7 +234,7 @@
     },
     {
       "id": "30",
-      "Product Name": "LG 34GN850-B",
+      "Name": "LG 34GN850-B",
       "Category": "Monitor",
       "Price": 799.99,
       "Status": "In Stock",
@@ -242,7 +242,7 @@
     },
     {
       "id": "31",
-      "Product Name": "AMD Ryzen 5 5600X",
+      "Name": "AMD Ryzen 5 5600X",
       "Category": "Processor",
       "Price": 249.99,
       "Status": "In Stock",
@@ -250,7 +250,7 @@
     },
     {
       "id": "32",
-      "Product Name": "MSI MPG Z590 Gaming Edge",
+      "Name": "MSI MPG Z590 Gaming Edge",
       "Category": "Motherboard",
       "Price": 209.99,
       "Status": "In Stock",
@@ -258,7 +258,7 @@
     },
     {
       "id": "33",
-      "Product Name": "Crucial Ballistix MAX 64GB DDR4",
+      "Name": "Crucial Ballistix MAX 64GB DDR4",
       "Category": "RAM",
       "Price": 279.99,
       "Status": "Out of Stock",
@@ -266,7 +266,7 @@
     },
     {
       "id": "34",
-      "Product Name": "Corsair CX750F RGB",
+      "Name": "Corsair CX750F RGB",
       "Category": "Power Supply",
       "Price": 109.99,
       "Status": "In Stock",
@@ -274,7 +274,7 @@
     },
     {
       "id": "35",
-      "Product Name": "ADATA XPG SX8200 Pro 1TB",
+      "Name": "ADATA XPG SX8200 Pro 1TB",
       "Category": "Storage Device",
       "Price": 129.99,
       "Status": "In Stock",
@@ -282,7 +282,7 @@
     },
     {
       "id": "36",
-      "Product Name": "Samsung Odyssey G7",
+      "Name": "Samsung Odyssey G7",
       "Category": "Monitor",
       "Price": 699.99,
       "Status": "Out of Stock",
@@ -290,7 +290,7 @@
     },
     {
       "id": "37",
-      "Product Name": "Intel Core i5-11400F",
+      "Name": "Intel Core i5-11400F",
       "Category": "Processor",
       "Price": 219.99,
       "Status": "In Stock",
@@ -298,7 +298,7 @@
     },
     {
       "id": "38",
-      "Product Name": "ASUS Prime B560M-A",
+      "Name": "ASUS Prime B560M-A",
       "Category": "Motherboard",
       "Price": 129.99,
       "Status": "Out of Stock",
@@ -306,7 +306,7 @@
     },
     {
       "id": "39",
-      "Product Name": "Corsair Vengeance LPX 16GB DDR4",
+      "Name": "Corsair Vengeance LPX 16GB DDR4",
       "Category": "RAM",
       "Price": 89.99,
       "Status": "In Stock",
@@ -314,7 +314,7 @@
     },
     {
       "id": "40",
-      "Product Name": "Thermaltake Toughpower GF1 750W",
+      "Name": "Thermaltake Toughpower GF1 750W",
       "Category": "Power Supply",
       "Price": 129.99,
       "Status": "In Stock",
@@ -322,7 +322,7 @@
     },
     {
       "id": "41",
-      "Product Name": "Seagate BarraCuda 2TB",
+      "Name": "Seagate BarraCuda 2TB",
       "Category": "Storage Device",
       "Price": 74.99,
       "Status": "In Stock",
@@ -330,7 +330,7 @@
     },
     {
       "id": "42",
-      "Product Name": "ViewSonic XG2405",
+      "Name": "ViewSonic XG2405",
       "Category": "Monitor",
       "Price": 249.99,
       "Status": "Out of Stock",
@@ -338,7 +338,7 @@
     },
     {
       "id": "43",
-      "Product Name": "AMD Ryzen 3 5300G",
+      "Name": "AMD Ryzen 3 5300G",
       "Category": "Processor",
       "Price": 159.99,
       "Status": "In Stock",
@@ -346,7 +346,7 @@
     },
     {
       "id": "44",
-      "Product Name": "GIGABYTE B450M DS3H",
+      "Name": "GIGABYTE B450M DS3H",
       "Category": "Motherboard",
       "Price": 79.99,
       "Status": "In Stock",
@@ -354,7 +354,7 @@
     },
     {
       "id": "45",
-      "Product Name": "Kingston HyperX Fury RGB 8GB DDR4",
+      "Name": "Kingston HyperX Fury RGB 8GB DDR4",
       "Category": "RAM",
       "Price": 69.99,
       "Status": "Out of Stock",
@@ -362,7 +362,7 @@
     },
     {
       "id": "46",
-      "Product Name": "EVGA 500 BQ",
+      "Name": "EVGA 500 BQ",
       "Category": "Power Supply",
       "Price": 69.99,
       "Status": "In Stock",
@@ -370,7 +370,7 @@
     },
     {
       "id": "47",
-      "Product Name": "Western Digital Blue 500GB",
+      "Name": "Western Digital Blue 500GB",
       "Category": "Storage Device",
       "Price": 69.99,
       "Status": "In Stock",
@@ -378,7 +378,7 @@
     },
     {
       "id": "48",
-      "Product Name": "Acer Nitro VG240Y",
+      "Name": "Acer Nitro VG240Y",
       "Category": "Monitor",
       "Price": 179.99,
       "Status": "In Stock",
@@ -386,7 +386,7 @@
     },
     {
       "id": "49",
-      "Product Name": "Intel Core i3-10100",
+      "Name": "Intel Core i3-10100",
       "Category": "Processor",
       "Price": 139.99,
       "Status": "Out of Stock",
@@ -394,7 +394,7 @@
     },
     {
       "id": "50",
-      "Product Name": "MSI A320M-A PRO MAX",
+      "Name": "MSI A320M-A PRO MAX",
       "Category": "Motherboard",
       "Price": 64.99,
       "Status": "In Stock",
