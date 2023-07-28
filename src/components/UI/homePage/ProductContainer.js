@@ -3,12 +3,12 @@ const { Title } = Typography;
 import styles from '@/styles/Home.module.css';
 import ProductCard from './ProductCard';
 
-const FeaturedProduct = ({ products }) => {
+const ProductContainer = ({ title, products }) => {
   return (
     <div className={styles.container}>
-      <Title className={styles.heading}>Featured Product</Title>
+      <Title className={styles.heading}>{title}</Title>
       <Row gutter={[24, 64]}>
-        {products?.slice(0, 8).map((product) => (
+        {products?.map((product) => (
           <Col key={product.id} xs={24} md={12} lg={8} xl={6}>
             <ProductCard data={product} />
           </Col>
@@ -18,4 +18,4 @@ const FeaturedProduct = ({ products }) => {
   );
 };
 
-export default FeaturedProduct;
+export default ProductContainer;

@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import { Button } from 'antd';
 import RootLayout from '@/components/Layouts/RootLayout';
-import FeaturedProduct from '@/components/UI/homePage/FeaturedProduct';
+import ProductContainer from '@/components/UI/homePage/ProductContainer';
 import FeaturedCategories from '@/components/UI/homePage/FeaturedCategories';
 
 const HomePage = ({ products }) => {
@@ -13,7 +12,7 @@ const HomePage = ({ products }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FeaturedProduct products={products} />
+      <ProductContainer title="Featured Products" products={products} />
       <FeaturedCategories />
     </>
   );
@@ -30,7 +29,7 @@ export const getStaticProps = async () => {
   const data = await res.json();
   return {
     props: {
-      products: data,
+      products: data?.slice(0, 8),
     },
   };
 };

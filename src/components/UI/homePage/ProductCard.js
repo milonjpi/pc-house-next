@@ -11,7 +11,7 @@ const ProductCard = ({ data }) => {
       <Card
         hoverable
         cover={
-          <div style={{ height: 250, position: 'relative' }}>
+          <div style={{ height: 250, width: '100%', position: 'relative' }}>
             <Image
               fill={true}
               objectFit="cover"
@@ -22,23 +22,23 @@ const ProductCard = ({ data }) => {
           </div>
         }
       >
-        <Meta title={data?.Name} description={data?.Category} />
+        <Meta title={data?.name} description={data?.category} />
 
         <div style={{ paddingTop: 15 }}>
           <Paragraph>
-            Price: <span style={{ fontWeight: 700 }}>{data?.Price}</span>
+            Price: <span style={{ fontWeight: 700 }}>{data?.price}</span>
           </Paragraph>
           <Paragraph>
             Status:{' '}
             <span
               style={{
-                color: data?.Status === 'Out of Stock' ? 'red' : 'green',
+                color: data?.status === 'Out of Stock' ? 'red' : 'green',
               }}
             >
-              {data?.Status}
+              {data?.status}
             </span>
           </Paragraph>
-          <Rate disabled defaultValue={data?.Rating} />
+          <Rate disabled defaultValue={data?.rating} />
         </div>
       </Card>
     </Link>
