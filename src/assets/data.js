@@ -42,6 +42,10 @@ export const allCategories = [
 // all menu
 export const allMenuItems = [
   {
+    key: '0',
+    label: <Link href="/">Home</Link>,
+  },
+  {
     key: '1',
     label: 'Categories',
     children: [

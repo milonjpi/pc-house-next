@@ -1,10 +1,25 @@
-import data from '@/assets/db.json';
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = process.env.MONGO_CONNECTION_STRING;
 
-const handler = (req, res) => {
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  },
+});
+
+const handler = async (req, res) => {
   const { id } = req.query;
-  const singleProduct = data.accessories?.find((el) => el.id === id);
-
-  res.status(200).json(singleProduct);
+  try {
+    const productsCollection = client.db('pcHouse').collection('products');
+    if (req.method === 'GET') {
+      const product = await productsCollection.findOne({ id });
+      res.status(200).json(product);
+    }
+  } finally {
+    // await client.close();
+  }
 };
 
 export default handler;

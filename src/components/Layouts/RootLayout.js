@@ -49,6 +49,15 @@ const RootLayout = ({ children }) => {
           </Col>
           <Col xs={0} md={12} style={{ textAlign: 'right' }}>
             <Menu theme="dark" mode="vertical" className={styles.menu_items}>
+              <Link href="/">
+                <Space
+                  style={{
+                    marginRight: 25,
+                  }}
+                >
+                  Home
+                </Space>
+              </Link>
               <Dropdown
                 menu={{
                   items: menuCategories,

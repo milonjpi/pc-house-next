@@ -2,6 +2,7 @@ import Head from 'next/head';
 import RootLayout from '@/components/Layouts/RootLayout';
 import ProductContainer from '@/components/UI/homePage/ProductContainer';
 import FeaturedCategories from '@/components/UI/homePage/FeaturedCategories';
+import HeroSection from '@/components/UI/homePage/HeroSection';
 
 const HomePage = ({ products }) => {
   return (
@@ -12,6 +13,7 @@ const HomePage = ({ products }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <HeroSection />
       <ProductContainer title="Featured Products" products={products} />
       <FeaturedCategories />
     </>
