@@ -1,4 +1,4 @@
-import { Grid, Col, Row, Typography, Button, Skeleton } from 'antd';
+import { Grid, Col, Row, Typography, Button, notification } from 'antd';
 import BuilderCategory from './BuilderCategory';
 import { allCategories } from '@/assets/data';
 import { useSelector } from 'react-redux';
@@ -7,9 +7,25 @@ const { useBreakpoint } = Grid;
 const { Title, Paragraph, Text } = Typography;
 
 const PcBuilderHome = () => {
+  const [api, contextHolder] = notification.useNotification();
   const { xs } = useBreakpoint();
   const builderData = useSelector((state) => state.builder.data);
-  console.log(builderData);
+  const filteredData = Object.values(builderData).filter((el) => el);
+
+  const amountCount = filteredData?.reduce(
+    (total, item) => total + parseFloat(item.price ? item.price : 0),
+    0
+  );
+
+  // handle complete
+  const handleComplete = () => {
+    api.open({
+      message: 'Great!!! Successfully Build',
+      description:
+        'You completed building your own computer from our PC House - Thank You',
+      duration: 3,
+    });
+  };
   return (
     <div
       style={{
@@ -61,7 +77,7 @@ const PcBuilderHome = () => {
                     textAlign: 'center',
                   }}
                 >
-                  350 tk
+                  {amountCount} tk
                 </Paragraph>
                 <Paragraph
                   style={{
@@ -71,7 +87,7 @@ const PcBuilderHome = () => {
                     textAlign: 'center',
                   }}
                 >
-                  2 Items
+                  {filteredData?.length} Items
                 </Paragraph>
               </div>
             </Col>
@@ -90,6 +106,18 @@ const PcBuilderHome = () => {
           {allCategories?.slice(0, 6).map((el) => (
             <BuilderCategory key={el.id} data={el} />
           ))}
+
+          <div style={{ textAlign: 'center' }}>
+            {contextHolder}
+            <Button
+              type="primary"
+              size="large"
+              disabled={filteredData?.length === 6 ? false : true}
+              onClick={handleComplete}
+            >
+              Complete Build
+            </Button>
+          </div>
         </div>
       </div>
     </div>

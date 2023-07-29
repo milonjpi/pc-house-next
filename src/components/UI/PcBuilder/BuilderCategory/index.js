@@ -61,11 +61,7 @@ const BuilderCategory = ({ data }) => {
         </div>
 
         <Link href={`/pc-builder/${data?.id}`}>
-          <Button
-            type="primary"
-            size="large"
-            disabled={chosenData ? true : false}
-          >
+          <Button type="primary" ghost disabled={chosenData ? true : false}>
             Choose
           </Button>
         </Link>
