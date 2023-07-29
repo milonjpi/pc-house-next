@@ -6,14 +6,28 @@ import {
   TwitterSquareFilled,
   DownOutlined,
 } from '@ant-design/icons';
-import { Col, Dropdown, Layout, Menu, Row, Space } from 'antd';
+import { Button, Col, Dropdown, Layout, Menu, Row, Space } from 'antd';
 const { Header, Sider, Content, Footer } = Layout;
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
-import React from 'react';
+import { useSession, signOut } from 'next-auth/react';
 import { menuCategories, allMenuItems } from '@/assets/data';
 
 const RootLayout = ({ children }) => {
+  const { data: session } = useSession();
+  const dropDownExtend = session
+    ? {
+        key: '3',
+        label: (
+          <Button type="primary" danger onClick={signOut}>
+            Logout
+          </Button>
+        ),
+      }
+    : {
+        key: '3',
+        label: <Link href="/login">Login</Link>,
+      };
   return (
     <Layout>
       <Header>
@@ -25,8 +39,6 @@ const RootLayout = ({ children }) => {
                   href="/"
                   style={{
                     color: '#fff',
-                    // backgroundColor: '#404040',
-                    // padding: '5px 10px',
                     borderRadius: '3px',
                   }}
                 >
@@ -50,21 +62,31 @@ const RootLayout = ({ children }) => {
                 </a>
               </Dropdown>
               <Link href="/pc-builder">
-                <items
+                <Space
                   style={{
                     margin: '0 25px',
                   }}
                 >
                   PC Builder
-                </items>
+                </Space>
               </Link>
-              <items className={styles.loginMenu}>Login</items>
+              {session ? (
+                <Space>
+                  <Button type="primary" danger onClick={signOut}>
+                    Logout
+                  </Button>
+                </Space>
+              ) : (
+                <Link href="/login">
+                  <Space>Login</Space>
+                </Link>
+              )}
             </Menu>
           </Col>
           <Col xs={6} md={0} style={{ textAlign: 'right' }}>
             <Dropdown
               menu={{
-                items: allMenuItems,
+                items: [...allMenuItems, dropDownExtend],
               }}
               trigger={['click']}
             >
