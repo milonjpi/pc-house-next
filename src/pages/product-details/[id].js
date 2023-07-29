@@ -24,7 +24,7 @@ ProductDetailsPage.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:3000/api/products');
+  const res = await fetch('https://pc-house-milonjpi.vercel.app/api/products');
   const allProducts = await res.json();
   const paths = allProducts.map((product) => ({
     params: { id: product.id },
@@ -35,7 +35,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const id = params.id;
-  const res = await fetch(`http://localhost:3000/api/products/${id}`);
+  const res = await fetch(
+    `https://pc-house-milonjpi.vercel.app/api/products/${id}`
+  );
   const data = await res.json();
   return {
     props: {

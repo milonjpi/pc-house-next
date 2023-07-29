@@ -37,7 +37,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const category = params.category;
-  const res = await fetch(`http://localhost:3000/api/categories/${category}`);
+  const res = await fetch(
+    `https://pc-house-milonjpi.vercel.app/api/categories/${category}`
+  );
   const data = await res.json();
   return {
     props: {

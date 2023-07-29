@@ -2,6 +2,7 @@ import { Typography, Button } from 'antd';
 import Link from 'next/link';
 import ChosenItem from './ChosenItem';
 import { useSelector } from 'react-redux';
+import Image from 'next/image';
 
 const { Paragraph } = Typography;
 
@@ -31,10 +32,17 @@ const BuilderCategory = ({ data }) => {
               background: '#dcdedd',
               borderRadius: 5,
               marginRight: 10,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
-          ></div>
+          >
+            <Image src={data?.image} width={35} height={35} alt="categories" />
+          </div>
           <div style={{ flex: 1, padding: '5px 0' }}>
-            <Paragraph style={{ fontSize: 16, marginBottom: 5 }}>
+            <Paragraph
+              style={{ fontSize: 16, marginBottom: 5, fontWeight: 700 }}
+            >
               {data?.label}{' '}
               <span
                 style={{

@@ -54,7 +54,7 @@ const ChooseProductCard = ({ data }) => {
           style={{ minWidth: 100 }}
           size="large"
         >
-          Add
+          Add To Builder
         </Button>
       </div>
     </Card>
