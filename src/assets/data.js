@@ -5,37 +5,37 @@ export const allCategories = [
   {
     id: 'processor',
     label: 'CPU / Processor',
-    image: '',
+    image: '/images/categories/processor.png',
   },
   {
     id: 'motherboard',
     label: 'Motherboard',
-    image: '',
+    image: '/images/categories/motherboard.png',
   },
   {
     id: 'ram',
     label: 'RAM',
-    image: '',
+    image: '/images/categories/ram.png',
   },
   {
     id: 'powerSupply',
     label: 'Power Supply Unit',
-    image: '',
+    image: '/images/categories/powerSupply.png',
   },
   {
     id: 'storage',
     label: 'Storage Device',
-    image: '',
+    image: '/images/categories/storage.png',
   },
   {
     id: 'monitor',
     label: 'Monitor',
-    image: '',
+    image: '/images/categories/monitor.png',
   },
   {
     id: 'others',
     label: 'Others',
-    image: '',
+    image: '/images/categories/headphone.png',
   },
 ];
 

@@ -9,12 +9,20 @@ const CategoryCard = ({ data }) => {
       <Card
         hoverable
         cover={
-          <div style={{ height: 250, width: '100%', position: 'relative' }}>
+          <div
+            style={{
+              height: 250,
+              width: '100%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <Image
-              layout="fill"
-              objectFit="cover"
-              alt="example"
-              src="/images/product.png"
+              width={150}
+              height={150}
+              alt={data?.catId || 'category'}
+              src={data?.image}
             />
           </div>
         }

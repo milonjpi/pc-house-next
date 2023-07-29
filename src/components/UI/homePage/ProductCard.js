@@ -16,7 +16,7 @@ const ProductCard = ({ data }) => {
               fill={true}
               objectFit="cover"
               alt="example"
-              src="/images/product.png"
+              src={`/images/products/${data?.image}`}
               style={{ position: 'absolute' }}
             />
           </div>
