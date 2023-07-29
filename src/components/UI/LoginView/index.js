@@ -1,8 +1,11 @@
 import { Button, Card } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 const LoginView = () => {
+  const router = useRouter();
+  const from = router.query?.callbackUrl;
   return (
     <div style={{ padding: '100px 0' }}>
       <Card
@@ -12,9 +15,7 @@ const LoginView = () => {
         <Button
           type="primary"
           icon={<GithubOutlined />}
-          onClick={() =>
-            signIn('github', { callbackUrl: 'http://localhost:3000' })
-          }
+          onClick={() => signIn('github', { callbackUrl: from ? from : '/' })}
         >
           Login with GitHub
         </Button>
