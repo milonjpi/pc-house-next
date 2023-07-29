@@ -49,7 +49,7 @@ const RootLayout = ({ children }) => {
                   </Space>
                 </a>
               </Dropdown>
-              <Link href="/about">
+              <Link href="/pc-builder">
                 <items
                   style={{
                     margin: '0 25px',

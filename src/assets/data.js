@@ -77,7 +77,7 @@ export const allMenuItems = [
   },
   {
     key: '2',
-    label: <Link href="/pcBuilder">PC Builder</Link>,
+    label: <Link href="/pc-builder">PC Builder</Link>,
   },
 ];
 

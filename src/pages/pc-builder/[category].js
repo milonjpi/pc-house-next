@@ -1,19 +1,20 @@
 import { allCategories } from '@/assets/data';
 import RootLayout from '@/components/Layouts/RootLayout';
+import ChooseProduct from '@/components/UI/PcBuilder/ChooseProduct';
 import ProductContainer from '@/components/UI/homePage/ProductContainer';
 import Head from 'next/head';
 import React from 'react';
 
-const CategoriesDetails = ({ products }) => {
+const BuilderChooserPage = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Categories Details - PC House</title>
+        <title>Choose Product - PC House</title>
         <meta name="description" content="Created by pc house bangladesh" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ProductContainer
+      <ChooseProduct
         title={products[0]?.category || 'Nothing Found'}
         products={products}
       />
@@ -21,14 +22,14 @@ const CategoriesDetails = ({ products }) => {
   );
 };
 
-export default CategoriesDetails;
+export default BuilderChooserPage;
 
-CategoriesDetails.getLayout = function getLayout(page) {
+BuilderChooserPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
 export const getStaticPaths = async () => {
-  const paths = allCategories.map((category) => ({
+  const paths = allCategories?.slice(0, 6).map((category) => ({
     params: { category: category.id },
   }));
 
