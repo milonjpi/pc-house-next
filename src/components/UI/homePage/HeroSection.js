@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section
       style={{
         position: 'relative',
-        backgroundImage: 'url(/images/hero-bg.png)',
+        backgroundImage: 'url(/images/hero-bg.jpg)',
         minHeight: 500,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
