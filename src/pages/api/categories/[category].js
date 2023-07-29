@@ -1,5 +1,3 @@
-import data from '@/assets/db.json';
-
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = process.env.MONGO_CONNECTION_STRING;
 
